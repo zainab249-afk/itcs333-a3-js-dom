@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         counter.textContent = `${items.length} items left`;
     }
 
+    
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
