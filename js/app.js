@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const li = document.createElement('li');
         li.innerHTML = `
-            <span class="todo-text">${text}</span>
+            <span class="item-text">${text}</span>
             <button class="delete-btn">X</button>
         `;
         
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        if (e.target.classList.contains('todo-text')) {
+        if (e.target.classList.contains('item-text')) {
             e.target.parentElement.classList.toggle('completed');
             updateCounter();
         }
